@@ -1,0 +1,77 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def prob(x, y):\n",
+    "    return (x / y)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def count(val, data):\n",
+    "    count = 0\n",
+    "    for i in data:\n",
+    "        if( i == val):\n",
+    "            count += 1\n",
+    "    return count"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def fit(datagram):\n",
+    "    output_names = datagram[-1]\n",
+    "    features = datagram[0:-1] # prevent last answer column\n",
+    "    counts = {}\n",
+    "    possible_outputs = set(datagram[output_names])\n",
+    "    for output in possible_outputs:\n",
+    "        counts[output] = {}\n",
+    "        small_data = datagram[datagram[output_name] == output]\n",
+    "        for f in features:\n",
+    "            counts[output][f] = {}\n",
+    "            possible_values = set(small_data[f])"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.6.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
